@@ -1,0 +1,3 @@
+Random Forest - max_depth=25 - Exactitud: 63.29%
+Regresion Logica - Exactitud: 49.95%
+Decision Tree - max_depth=25 - Exactitud: 60.19%
