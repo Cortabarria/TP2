@@ -22,7 +22,7 @@ Las tareas de KDD sobre el dataset `train.csv`.
 * En la etapa de transformacion, todos los datos fueron convertidos a formatos numéricos (enteros o flotantes). Esta conversión se realizó con el fin de facilitar su utilización por los modelos de Aprendizaje Automático seleccionados, con el objetivo de obtener los mejores resultados posibles.
 
 ## Enfoques sobre la Mineria de Datos
-### Enfoque 1 'Eliminar nulos'
+### Enfoque 1 'Eliminar columnas con un alto índice de valores nulos'
 Los archivos relacionados a este enfoque se encuentran en la carpeta [`enfoque-1`](enfoque-1)
 * Numero de filas: 8921483
 * Numero de filas: 63
