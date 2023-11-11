@@ -24,7 +24,10 @@ Las tareas de KDD sobre el dataset `train.csv`.
 ## Enfoques sobre la Mineria de Datos
 ### Enfoque 1 'Eliminar nulos'
 Los archivos relacionados a este enfoque se encuentran en la carpeta [`enfoque-1`](enfoque-1)
-Las columnas que se eliminario debido a su indice de valores nulos:
+* Numero de filas: 8921483
+* Numero de filas: 63
+
+Las columnas que se eliminaron debido a su indice de valores nulos:
  * PuaMode
  * Census_ProcessorClass
  * DefaultBrowsersIdentifier
