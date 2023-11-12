@@ -14,7 +14,7 @@ El dataset de entrenamiento [`train.csv`](https://www.kaggle.com/competitions/mi
 ## KDD
 
 Las tareas de KDD sobre el dataset `train.csv`.
-* En la etapa de limpieza, no se tuvo que realizar ninguna accion ya que no se poseían errores / datos con ruido
+* En la etapa de limpieza, no se tuvo que realizar ninguna accion ya que no se poseían errores / datos con ruido. Esto se pudo averiguar ya que se fue columna por columna donde se obtenian los valores que tenian y donde devolvia la clase de esa columna (Si era Entero, Flotante, String). 
 * En la etapa de Seleccion, se realizaron 2 enfoques diferentes:
   * Eliminación de las columnas con un alto índice de valores nulos (Enfoque 1)
   * Conservación de todas las columnas (Enfoque 2).
