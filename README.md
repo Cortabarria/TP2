@@ -14,7 +14,7 @@ El dataset de entrenamiento [`train.csv`](https://www.kaggle.com/competitions/mi
 ## KDD
 
 Las tareas de KDD sobre el dataset `train.csv`.
-* En la etapa de limpieza, no se tuvo que realizar ninguna accion ya que no se poseían errores / datos con ruido
+* En la etapa de limpieza, no se tuvo que realizar ninguna accion ya que no se poseían errores / datos con ruido. Esto se pudo averiguar ya que se fue columna por columna donde se obtenian los valores que tenian y donde devolvia la clase de esa columna (Si era Entero, Flotante, String). 
 * En la etapa de Seleccion, se realizaron 2 enfoques diferentes:
   * Eliminación de las columnas con un alto índice de valores nulos (Enfoque 1)
   * Conservación de todas las columnas (Enfoque 2).
@@ -22,9 +22,11 @@ Las tareas de KDD sobre el dataset `train.csv`.
 * En la etapa de transformacion, todos los datos fueron convertidos a formatos numéricos (enteros o flotantes). Esta conversión se realizó con el fin de facilitar su utilización por los modelos de Aprendizaje Automático seleccionados, con el objetivo de obtener los mejores resultados posibles.
 
 ## Enfoques sobre la Mineria de Datos
-### Enfoque 1 'Eliminar columnas con un alto índice de valores nulos'
+### <ins>Enfoque 1 'Eliminar columnas con un alto índice de valores nulos'</ins>
+Este enfoque se realizo con [scikit-learn](https://scikit-learn.org/stable/user_guide.html)
+
 Los archivos relacionados a este enfoque se encuentran en la carpeta [`enfoque-1`](enfoque-1)
-* Numero de filas: 8921483
+* Numero de filas: 8.921.483
 * Numero de filas: 63
 
 Las columnas que se eliminaron debido a su indice de valores nulos:
@@ -51,21 +53,38 @@ Las columnas que se eliminaron debido a su indice de valores nulos:
    
 Los valores nulos que quedaron en las otras columnas se decidio darle el valor `0`.
 
+A continuacion se muestra la correlatividad de las columnas del enfoque-1 con `HasDetections`
+![imagen](https://github.com/Cortabarria/TP2/assets/131315165/88af496e-44a2-448a-ab45-67c3ab134699)
+
+
+
 Los resultados obtenidos de los siguientes modelos basados en este enfoque fueron:
+```
 1. Random Forest - max_depth=25 - Exactitud: 63.29%
-1. Gradient Boosting - n_estimators=15, max_depth=5 - Exactitud: 60.44%
-1. Decision Tree - max_depth=25 - Exactitud: 60.19%
-1. Regresion Logica - Exactitud: 49.95%
+2. Gradient Boosting - n_estimators=15, max_depth=5 - Exactitud: 60.44%
+3. Decision Tree - max_depth=25 - Exactitud: 60.19%
+4. Regresion Logica - Exactitud: 49.95%
+```
 
+### <ins>Enfoque 2 'Conservar todo'</ins>
+Este enfoque se realizo con [XGBoost](https://xgboost.readthedocs.io/en/stable/get_started.html)
 
-### Enfoque 2 'Conservar todo'
 Los archivos relacionados a este enfoque se encuentran en la carpeta [`enfoque-2`](enfoque-2)
-* Numero de filas: 8921483
+* Numero de filas: 8.921.483
 * Numero de filas: 83
 
 No se elimino ninguna columna y los valores nulos quedaron como NaN.
 
+A continuacion se muestra la correlatividad de las columnas del enfoque-2 con `HasDetections`
+![imagen](https://github.com/Cortabarria/TP2/assets/131315165/8f546288-3dbe-497e-b235-b174385e6761)
+
+
+
 Los resultados obtenidos de los siguientes modelos basados en este enfoque fueron:
+```
 1. XGBoost - Exactitud: 65.78%
-1. XGBoost Random Forest - Exactitud: 62.16%
-1. XGBoost Regressor - Error Cuadrático Medio: 0.21233367732551084
+2. XGBoost Random Forest - Exactitud: 62.16%
+3. XGBoost Regressor - Error Cuadrático Medio: 0.21233367732551084
+```
+## Conclusion
+La comparación de resultados revela que el Enfoque 2 ha generado un rendimiento superior al emplear la herramienta de XGBoost. Contrario a la intuición inicial que sugería que la eliminación de columnas y valores nulos, abordada en el Enfoque 1, conduciría a un modelo más precario.
