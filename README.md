@@ -26,7 +26,7 @@ Las tareas de KDD sobre el dataset `train.csv`.
 Este enfoque se realizo con [scikit-learn](https://scikit-learn.org/stable/user_guide.html)
 
 Los archivos relacionados a este enfoque se encuentran en la carpeta [`enfoque-1`](enfoque-1)
-* Numero de filas: 8921483
+* Numero de filas: 8.921.483
 * Numero de filas: 63
 
 Las columnas que se eliminaron debido a su indice de valores nulos:
@@ -69,7 +69,7 @@ Los resultados obtenidos de los siguientes modelos basados en este enfoque fuero
 Este enfoque se realizo con [XGBoost](https://xgboost.readthedocs.io/en/stable/get_started.html)
 
 Los archivos relacionados a este enfoque se encuentran en la carpeta [`enfoque-2`](enfoque-2)
-* Numero de filas: 8921483
+* Numero de filas: 8.921.483
 * Numero de filas: 83
 
 No se elimino ninguna columna y los valores nulos quedaron como NaN.
