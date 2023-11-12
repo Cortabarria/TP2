@@ -30,7 +30,7 @@ Las columnas que se eliminaron debido a su indice de valores nulos:
 Los valores nulos que quedaron en las otras columnas se decidio darle el valor `0`.
 
 A continuacion se muestra la correlatividad de las columnas del enfoque-1 con `HasDetections`
-![imagen](https://github.com/Cortabarria/TP2/assets/131315165/53f1f72a-7a9b-44d0-b116-39f08e9e9cff)
+![imagen](https://github.com/Cortabarria/TP2/assets/131315165/8f546288-3dbe-497e-b235-b174385e6761)
 
 
 Los resultados obtenidos de los siguientes modelos basados en este enfoque fueron:
