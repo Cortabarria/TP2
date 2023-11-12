@@ -1,0 +1,3 @@
+XGBoost - Exactitud: 65.78%
+XGBoost Random Forest - Exactitud: 62.16%
+XGBoost Regressor - Error Cuadrático Medio: 0.21233367732551084

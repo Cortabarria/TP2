@@ -59,3 +59,13 @@ Los resultados obtenidos de los siguientes modelos basados en este enfoque fuero
 
 
 ### Enfoque 2 'Conservar todo'
+Los archivos relacionados a este enfoque se encuentran en la carpeta [`enfoque-2`](enfoque-2)
+* Numero de filas: 8921483
+* Numero de filas: 83
+
+No se elimino ninguna columna y los valores nulos quedaron como NaN.
+
+Los resultados obtenidos de los siguientes modelos basados en este enfoque fueron:
+1. XGBoost - Exactitud: 65.78%
+1. XGBoost Random Forest - Exactitud: 62.16%
+1. XGBoost Regressor - Error Cuadrático Medio: 0.21233367732551084
