@@ -27,7 +27,7 @@ Este enfoque se realizo con [scikit-learn](https://scikit-learn.org/stable/user_
 
 Los archivos relacionados a este enfoque se encuentran en la carpeta [`enfoque-1`](enfoque-1)
 * Numero de filas: 8.921.483
-* Numero de filas: 63
+* Numero de columnas: 63
 
 Las columnas que se eliminaron debido a su indice de valores nulos:
  * PuaMode
@@ -71,7 +71,7 @@ Este enfoque se realizo con [XGBoost](https://xgboost.readthedocs.io/en/stable/g
 
 Los archivos relacionados a este enfoque se encuentran en la carpeta [`enfoque-2`](enfoque-2)
 * Numero de filas: 8.921.483
-* Numero de filas: 83
+* Numero de columnas: 83
 
 No se elimino ninguna columna y los valores nulos quedaron como NaN.
 
